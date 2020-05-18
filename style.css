@@ -1,3 +1,5 @@
+
+/* ==================== global ===========================*/
 * {
     margin: 0;
     padding: 0;
@@ -7,6 +9,14 @@ a {
     color: #fff;
     text-decoration: none;
 }
+a:hover {
+    text-decoration: none;
+}
+i {
+    color: #2997F1;
+}
+
+/* ===================== CSS  ==================*/
 
 .header {
     width: 100%;
@@ -29,4 +39,51 @@ a {
     z-index: -2;
     background-image: linear-gradient(90deg, #FFE53B 0%, #FF2525 37%, #1670c1 93%);
 
+}
+.header-contents {
+    position: relative;
+    width: 100vw;
+    height: inherit;
+    text-align: center;
+    color: #fff;
+}
+.header-contents .contents {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    top:25%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
+
+/* -------------------- Mian body  -------------------- */
+
+.main {
+    margin: 50px;
+}
+.card-title {
+    text-align: center;
+    padding: 5px;
+}
+.card-title .fa {
+    color: #2997f1;
+    
+}
+.services {
+    margin: 50px 10px;
+    position: relative;
+    color: #0000ff;
+    background-color: #b6d7f1;
+    padding: 20px;
+}
+.heading {
+    text-align: center;
+    color:#0400ff;
+    z-index: 2;
+}
+.services-left {
+    padding: 30px;
+}
+.services-right {
+    padding: 30px;
 }
