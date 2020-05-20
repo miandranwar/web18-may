@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
@@ -16,23 +18,34 @@
         <div class="header">
             <div class="container">
             <nav class="navbar navbar-expand-lg bg-primary">
-                <a class="navbar-brand text-uppercase" href="#">WebDev</a>
+                <a class="navbar-brand" href="#">WebDev</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon "></span>
+                  <span ><i class="fa fa-bars" style="color: red;"></i></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                  <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
-                      <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                  <ul class="navbar-nav mx-auto">
+                    <li class="nav-item ">
+                      <a class="nav-link" href="#">Home</a>
                     </li>
-                    <li class="nav-item active">
-                      <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        WebDev
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#about-us">About Us</a>
+                        <a class="dropdown-item" href="#team">Team</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Contact us</a>
+                      </div>
                     </li>
-                    <li class="nav-item active">
-                      <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    <li class="nav-item ">
+                      <a class="nav-link" href="#services">Services</a>
                     </li>
-                    <li class="nav-item active">
-                      <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    <li class="nav-item ">
+                      <a class="nav-link" href="#">Blog</a>
+                    </li>
+                    <li class="nav-item ">
+                      <a class="nav-link" href="#">Try Free</a>
                     </li>
                     </ul>
                 </div>
@@ -41,7 +54,7 @@
             <section class="header-contents">
                 <div class="contents">
                     <h1 class="display-2">WebDev</h1>
-                    <h4>Website development</h4>
+                    <h4>Website developer Company</h4>
                 </div>
             </section>
         </div>
@@ -51,8 +64,11 @@
         <!-- Main body start -->
 
         <div class="main">
-            <div class="card-deck">
-                <div class="card">
+            <!--   About us  -->
+            <section class="about" id="about-us">
+              <h2>About us</h2>
+              <div class="card-deck">
+                <div class="card" data-aos="fade-right">
                   <div class="card-body">
                     <div class="card-title"><a href=""><i class="fa-3x fa fa-facebook"></i></a></div>
                     <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
@@ -70,7 +86,7 @@
                     <small class="text-muted">Last updated 3 mins ago</small>
                   </div>
                 </div>
-                <div class="card">
+                <div class="card" data-aos="fade-left">
                   <div class="card-body">
                     <div class="card-title"><a href=""><i class="fa-3x fa fa-twitter"></i></a></div>
                     <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
@@ -80,10 +96,15 @@
                   </div>
                 </div>
             </div>
+
+            </section>
+
+
             <!-- section for services -->
-            <div class="services">
+            <section>
+              <div class="services" id="services">
                 <div class="heading">
-                    <h1>Our Services</h1>
+                    <h2>Our Services</h2>
                     <p>We have been providing services since 2019</p>
                 </div>
                 <div class="">
@@ -149,16 +170,63 @@
                     </div>
                   </div>
             </div>
+              
         </div>
-
+            </section>
+            <section class="team" id="team">
+                <h2>Our Team Members</h2>
+                <div class="card-deck">
+                  <div class="card">
+                    <i class="fa-3x fa fa-paint-brush"></i>
+                    <div class="card-body">
+                      <h5 class="card-title">Composer</h5>
+                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    </div>
+                    <div class="card-footer">
+                      <small class="text-primary">Last updated 3 mins ago</small>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <i class="fa-3x fa fa-crop"></i>
+                    <div class="card-body">
+                      <h5 class="card-title">Webpage Designer</h5>
+                      <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                    </div>
+                    <div class="card-footer">
+                      <small class="text-primary">Last updated 3 mins ago</small>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <i class="fa-3x fa fa-cogs"></i>
+                    <div class="card-body">
+                      <h5 class="card-title">Web Engineer</h5>
+                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                    </div>
+                    <div class="card-footer">
+                      <small class="text-primary">Last updated 3 mins ago</small>
+                    </div>
+                  </div>
+              </div>
+            </section>
         <!-- Mian body end -->
 
-        <div class="footer"></div>
+        <div class="footer">
+          <h4>This is footer</h4>
+        </div>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        mirror: "true",
+        duration: 1000,
+        easing:"linear",
+        offset:200
+      });
+    </script>
 </body>
 
 </html>

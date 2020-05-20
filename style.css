@@ -4,6 +4,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Yeseva One', cursive;
+}
+body {
+    background-color: #eeecec;
 }
 a {
     color: #fff;
@@ -15,8 +19,15 @@ a:hover {
 i {
     color: #2997F1;
 }
+.card {
+    box-shadow: 4px 6px 10px #000;
+}
+
 
 /* ===================== CSS  ==================*/
+
+
+/* ===================== CSS for header ==================*/
 
 .header {
     width: 100%;
@@ -37,8 +48,31 @@ i {
     background-color: #FFE53B;
     opacity: 0.3;
     z-index: -2;
-    background-image: linear-gradient(90deg, #FFE53B 0%, #FF2525 37%, #1670c1 93%);
-
+   background-image: linear-gradient(90deg, #FFE53B 0%, #FF2525 37%, #1670c1 93%);
+}
+.navbar {
+    border-radius: 20px;
+}
+.navbar-brand {
+    padding: 0 50px;
+    font-size: 1.6rem;
+    color: gold;
+}
+.navbar-nav li a {
+    margin: 0 20px;
+    border: solid 2px transparent;
+}
+.navbar-nav li a:hover {
+    margin: 0 20px;
+    color: #fff;
+    border-bottom: solid 2px #fff;
+    border-top: solid 2px #fff;
+}
+.dropdown-menu {
+    color:#000
+}
+.dropdown-menu a:hover {
+    background-color: #007BFF;
 }
 .header-contents {
     position: relative;
@@ -50,34 +84,70 @@ i {
     position: absolute;
     width: 100%;
     height: auto;
-    top:25%;
+    top:20%;
     left:50%;
     transform: translate(-50%, -50%);
 }
 
-/* -------------------- Mian body  -------------------- */
+/* ===================== CSS for main body  ==================*/
 
 .main {
     margin: 50px;
+}
+
+/* ===================== CSS for about-us  ==================*/
+
+.about {
+    width: 100%;
+    height: 100vh;
+    margin: 100px auto;
+}
+.about h2 {
+    color: #007BFF;
+    text-align: center;
+}
+.about .card-deck {
+    margin: 50px auto;
 }
 .card-title {
     text-align: center;
     padding: 5px;
 }
 .card-title .fa {
-    color: #2997f1;
+    color: #007BFF;
     
 }
+
+/* ===================== CSS for team  ==================*/
+.team {
+    width: 100%;
+    height: 100vh;
+
+}
+.team h2 {
+    color: #007BFF;
+    text-align: center;
+}
+.team .card-deck {
+    margin: 50px 50px;
+}
+.team .card i {
+    margin: 10px auto;
+}
+
+/* ===================== CSS for services  ==================*/
+
+
 .services {
     margin: 50px auto;
     position: relative;
-    color: #0000ff;
-    background-color: #b6d7f1;
+    color: #fff;
+    background-color: #007BFF;
     padding: 20px;
 }
 .heading {
     text-align: center;
-    color:#0400ff;
+    color:#fff;
     z-index: 2;
 }
 .services-left {
@@ -85,4 +155,35 @@ i {
 }
 .services-right {
     padding: 30px;
+}
+.services-right i {
+    color: #fff;
+}
+
+/* ===================== CSS for footer  ==================*/
+.footer {
+    width: 100%;
+    height: 60vh;
+    background-color: #000;
+    color: #fff;
+}
+
+
+
+/* ===================== Media query  ==================*/
+
+
+@media (max-width:700px){
+    .header-contents .contents h1 {
+        font-size: 30px ;
+    }
+    .header-contents .contents h4 {
+        font-size: 15px ;
+    }
+    .header {
+        height: 60vh;
+    }
+    .about {
+        height: 120vh;
+    }
 }
